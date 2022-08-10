@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+   display: flex;
+   background-color: black;
+   justify-content: space-around;
+}
+.links{
+    display: inline-block;
+    background-color: #017bab;
+    padding: 10px 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+.links:hover{
+    background-color: #65adf5;
+    color: black;
+    transform: rotate(15deg);
+}
+
+@media (max-width: 600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .links{
+        margin: 7px 0;
+    }
+}
